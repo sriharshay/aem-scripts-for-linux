@@ -1,0 +1,7 @@
+#!/bin/bash  
+echo "Starting AEM in debug mode"  
+java -Xmx2048m -agentlib:jdwp=transport=dt_socket,address=30303,server=y,suspend=n -jar aem6.3-author-p4502.jar
+echo "*"
+echo "*"
+echo "*"
+echo "Stopped AEM instance"

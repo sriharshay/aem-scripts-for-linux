@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Stopping AEM instance"
+output=`ps -fC java`
+set -- $output
+pid=${10}
+kill $pid
+sleep 2
+kill -9 $pid >/dev/null 2>&1
